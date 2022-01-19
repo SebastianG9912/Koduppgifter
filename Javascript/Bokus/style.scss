@@ -1,0 +1,43 @@
+.border-regular {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+body {
+  border: 1px solid black;
+  width: 70%;
+  height: fit-content;
+  margin: 1vh auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo searchbar checkout"
+    "menu menu menu";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.searchbar {
+  grid-area: searchbar;
+}
+
+.checkout {
+  grid-area: checkout;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left-side main-content right-side";
+}
