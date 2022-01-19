@@ -10,6 +10,11 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   margin: 1vh auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 header {
@@ -26,6 +31,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
+  color: #838383;
 }
 
 .searchbar {
@@ -34,10 +40,23 @@ header {
   grid-area: searchbar;
 }
 
+.searchbar input {
+  width: 100%;
+  height: 100%;
+}
+
 .checkout {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: checkout;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+}
+
+.checkout > * {
+  margin: 0 1vw;
 }
 
 .menu {

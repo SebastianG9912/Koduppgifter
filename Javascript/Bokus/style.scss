@@ -8,6 +8,11 @@ body {
   width: 70%;
   height: fit-content;
   margin: 1vh auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 header {
@@ -21,14 +26,26 @@ header {
 
 .logo {
   grid-area: logo;
+  color: rgb(131, 131, 131);
 }
 
 .searchbar {
   grid-area: searchbar;
 }
 
+.searchbar input {
+  width: 100%;
+  height: 100%;
+}
+
 .checkout {
   grid-area: checkout;
+  display: flex;
+  font-size: 2em;
+}
+
+.checkout > * {
+  margin: 0 1vw;
 }
 
 .menu {
