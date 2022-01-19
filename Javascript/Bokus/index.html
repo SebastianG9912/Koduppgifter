@@ -24,16 +24,51 @@
       <header>
         <div class="logo border-regular"><h1>bokus</h1></div>
         <div class="searchbar border-regular">
-          <input type="text" placeholder="Seacrch books" />
+          <input type="text" placeholder="Search books" />
         </div>
         <div class="checkout border-regular">
-          <i class="bi bi-cart-fill"></i>
+          <div class="cart-Icon">
+            <i class="bi bi-cart-fill"></i>
+            <div class="cart-Icon-Amount"><p>3</p></div>
+          </div>
           <button>Checkout</button>
           <div class="add-Popup">
             <p><span>Klubben</span> added to the cart</p>
             <button id="addCart" class="button-fat">Show cart (1 book)</button>
             <button id="addClose" class="button-fat">Close</button>
             <button id="addCheckout" class="button-fat">Checkout</button>
+          </div>
+          <div class="cart-Popup">
+            <h6>Your cart</h6>
+            <div class="cart-Card">
+              <div class="cart-Card-Image"></div>
+              <h5>Klubben</h5>
+              <div class="price-And-Amount">
+                <input type="text" value="1" />
+                <p>59 kr/p</p>
+              </div>
+              <p class="cart-Card-Sum">59 kr</p>
+            </div>
+            <div class="cart-Card">
+              <div class="cart-Card-Image"></div>
+              <h5>Det sista livet</h4>
+              <div class="price-And-Amount">
+                <input type="text" value="2" id="book-Amount"/>
+                <p>59 kr/p</p>
+              </div>
+              <p class="cart-Card-Sum">98 kr</p>
+            </div>
+            <div class="cart-Sum">
+              <div class="cart-Sum-Amount">
+                <p>Sum (3 books):</p>
+                <p class="final-Sum">108 kr</p>
+              </div>
+              <p class="cart-Sum-Freight">Free freight over 159kr (52 kr left)</p>
+            </div>
+            <div class="cart-Buttons">
+              <button id="addClose" class="button-fat">Close</button>
+              <button id="addCheckout" class="button-fat">Checkout</button>
+            </div>
           </div>
         </div>
         <div class="menu border-regular">
