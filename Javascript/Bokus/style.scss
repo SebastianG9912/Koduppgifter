@@ -5,7 +5,7 @@
 
 body {
   border: 1px solid black;
-  width: 70%;
+  width: 90%;
   height: fit-content;
   margin: 1vh auto;
   font-family: "Roboto", sans-serif;
@@ -27,6 +27,7 @@ header {
 .logo {
   grid-area: logo;
   color: rgb(131, 131, 131);
+  text-align: center;
 }
 
 .searchbar {
@@ -49,7 +50,21 @@ header {
 }
 
 .menu {
+  padding: 0;
   grid-area: menu;
+}
+
+.menu ul {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin: 0;
 }
 
 main {

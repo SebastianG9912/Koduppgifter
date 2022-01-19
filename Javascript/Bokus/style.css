@@ -5,7 +5,7 @@
 
 body {
   border: 1px solid black;
-  width: 70%;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -32,6 +32,7 @@ header {
   -ms-grid-column: 1;
   grid-area: logo;
   color: #838383;
+  text-align: center;
 }
 
 .searchbar {
@@ -60,10 +61,27 @@ header {
 }
 
 .menu {
+  padding: 0;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: menu;
+}
+
+.menu ul {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu li {
+  margin: 0;
 }
 
 main {
