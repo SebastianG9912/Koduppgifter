@@ -20,8 +20,8 @@ h1 {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "logo searchbar checkout" "menu menu menu";
@@ -87,10 +87,47 @@ header {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "left-side main-content right-side";
+}
+
+.main-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 25px;
+}
+
+.card {
+  width: 150px;
+  height: auto;
+}
+
+.card > * {
+  padding: 0;
+  margin: 0.3vh 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background-color: #303030;
+}
+
+.card button {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
