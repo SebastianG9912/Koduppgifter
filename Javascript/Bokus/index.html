@@ -20,92 +20,101 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo border-regular"><h1>bokus</h1></div>
-      <div class="searchbar border-regular">
-        <input type="text" placeholder="Seacrch books" />
-      </div>
-      <div class="checkout border-regular">
-        <i class="bi bi-cart-fill"></i>
-        <button>Checkout</button>
-      </div>
-      <div class="menu border-regular">
-        <ul>
-          <li><p>Våra böcker</p></li>
-          <li><p>Nyheter</p></li>
-          <li><p>Topplistor</p></li>
-          <li><p>Bokus Play</p></li>
-          <li><p>Julklappar</p></li>
-          <li><p>Erbjudanden</p></li>
-          <li><p>Barn & tonår</p></li>
-          <li><p>Student</p></li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <div class="left-Side border-regular"></div>
-      <div class="main-Content border-regular">
-        <h1>Paperbacks</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          corrupti ut ab itaque sequi commodi unde. Unde quisquam minus
-          voluptate sint rerum aut quae architecto veritatis ipsa explicabo non,
-          facilis incidunt atque eius numquam amet voluptatibus illum quidem
-          temporibus esse reiciendis dignissimos. Ea, minima voluptatibus?
-          Officiis quas, beatae laudantium corporis optio magni placeat laborum
-          eum itaque debitis at voluptatem dolore unde voluptates nobis animi?
-          Quae, ab corporis rerum nostrum, voluptatibus nesciunt architecto
-          asperiores blanditiis ut laborum quis! Temporibus voluptate
-          consequuntur molestias. Ullam accusamus illum eveniet dignissimos
-          nostrum sed, officia facilis. Cupiditate velit culpa eligendi
-          voluptates non quisquam voluptatem! Quisquam, nulla?
-        </p>
-        <div class="card-Container">
-          <div class="card">
-            <div class="card-image"></div>
-            <h4>Skärmhjärnan</h4>
-            <p>Anders Hansen</p>
-            <p>59 kr</p>
-            <button>Buy</button>
-          </div>
-          <div class="card">
-            <div class="card-image"></div>
-            <h4>Klubben</h4>
-            <p>Matilda Voss</p>
-            <p>59 kr</p>
-            <button>Buy</button>
-          </div>
-          <div class="card">
-            <div class="card-image"></div>
-            <h4>Det sista livet</h4>
-            <p>Peter Nyström</p>
-            <p>49 kr</p>
-            <button>Buy</button>
-          </div>
-          <div class="card">
-            <div class="card-image"></div>
-            <h4>Skytten</h4>
-            <p>Jonas Moström</p>
-            <p>59 kr</p>
-            <button>Buy</button>
-          </div>
-          <div class="card">
-            <div class="card-image"></div>
-            <h4>Franska fotografen</h4>
-            <p>Natasha Lester</p>
-            <p>59 kr</p>
-            <button>Buy</button>
-          </div>
-          <div class="card">
-            <div class="card-image"></div>
-            <h4>Ödemark</h4>
-            <p>Stina Jackson</p>
-            <p>59 kr</p>
-            <button>Buy</button>
+    <div class="all-Content">
+      <header>
+        <div class="logo border-regular"><h1>bokus</h1></div>
+        <div class="searchbar border-regular">
+          <input type="text" placeholder="Seacrch books" />
+        </div>
+        <div class="checkout border-regular">
+          <i class="bi bi-cart-fill"></i>
+          <button>Checkout</button>
+          <div class="add-Popup">
+            <p><span>Klubben</span> added to the cart</p>
+            <button id="addCart" class="button-fat">Show cart (1 book)</button>
+            <button id="addClose" class="button-fat">Close</button>
+            <button id="addCheckout" class="button-fat">Checkout</button>
           </div>
         </div>
-      </div>
-      <div class="right-Side border-regular"></div>
-    </main>
+        <div class="menu border-regular">
+          <ul>
+            <li><p>Våra böcker</p></li>
+            <li><p>Nyheter</p></li>
+            <li><p>Topplistor</p></li>
+            <li><p>Bokus Play</p></li>
+            <li><p>Julklappar</p></li>
+            <li><p>Erbjudanden</p></li>
+            <li><p>Barn & tonår</p></li>
+            <li><p>Student</p></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="left-Side border-regular"></div>
+        <div class="main-Content border-regular">
+          <h1>Paperbacks</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            corrupti ut ab itaque sequi commodi unde. Unde quisquam minus
+            voluptate sint rerum aut quae architecto veritatis ipsa explicabo
+            non, facilis incidunt atque eius numquam amet voluptatibus illum
+            quidem temporibus esse reiciendis dignissimos. Ea, minima
+            voluptatibus? Officiis quas, beatae laudantium corporis optio magni
+            placeat laborum eum itaque debitis at voluptatem dolore unde
+            voluptates nobis animi? Quae, ab corporis rerum nostrum,
+            voluptatibus nesciunt architecto asperiores blanditiis ut laborum
+            quis! Temporibus voluptate consequuntur molestias. Ullam accusamus
+            illum eveniet dignissimos nostrum sed, officia facilis. Cupiditate
+            velit culpa eligendi voluptates non quisquam voluptatem! Quisquam,
+            nulla?
+          </p>
+          <div class="card-Container">
+            <div class="card">
+              <div class="card-image"></div>
+              <h4>Skärmhjärnan</h4>
+              <p>Anders Hansen</p>
+              <p>59 kr</p>
+              <button>Buy</button>
+            </div>
+            <div class="card">
+              <div class="card-image"></div>
+              <h4>Klubben</h4>
+              <p>Matilda Voss</p>
+              <p>59 kr</p>
+              <button>Buy</button>
+            </div>
+            <div class="card">
+              <div class="card-image"></div>
+              <h4>Det sista livet</h4>
+              <p>Peter Nyström</p>
+              <p>49 kr</p>
+              <button>Buy</button>
+            </div>
+            <div class="card">
+              <div class="card-image"></div>
+              <h4>Skytten</h4>
+              <p>Jonas Moström</p>
+              <p>59 kr</p>
+              <button>Buy</button>
+            </div>
+            <div class="card">
+              <div class="card-image"></div>
+              <h4>Franska fotografen</h4>
+              <p>Natasha Lester</p>
+              <p>59 kr</p>
+              <button>Buy</button>
+            </div>
+            <div class="card">
+              <div class="card-image"></div>
+              <h4>Ödemark</h4>
+              <p>Stina Jackson</p>
+              <p>59 kr</p>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-Side border-regular"></div>
+      </main>
+    </div>
   </body>
 </html>

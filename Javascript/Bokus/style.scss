@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.all-Content {
+  background-color: rgb(230, 230, 230);
+}
+
 h1 {
   margin: 0;
 }
@@ -43,6 +47,54 @@ header {
   grid-area: checkout;
   display: flex;
   font-size: 2em;
+  position: relative;
+}
+
+.add-Popup {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 25vw;
+  right: 0;
+  top: 14vh;
+  padding: 2vh 1vw;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 2vh;
+  column-gap: 1vw;
+  grid-template-areas:
+    "iT iT"
+    "ca ca"
+    "cl ch";
+}
+
+.add-Popup p {
+  display: inline-block;
+  font-size: 0.5em;
+  grid-area: iT;
+}
+
+.add-Popup span {
+  font-weight: bolder;
+}
+
+#addCart {
+  grid-area: ca;
+}
+
+#addClose {
+  grid-area: cl;
+}
+
+#addCheckout {
+  grid-area: ch;
+}
+
+.button-fat {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .checkout > * {
