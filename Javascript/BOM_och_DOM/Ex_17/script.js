@@ -6,7 +6,7 @@ document.getElementById("btn").onclick = function () {
 
   let temp = "";
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] == "," || i + 1 == numbers.length) {
+    if (numbers[i] == ",") {
       temp = +temp + +toAdd;
       fullWord += temp;
       temp = "";
@@ -18,6 +18,8 @@ document.getElementById("btn").onclick = function () {
       temp += numbers[i];
     }
   }
+  temp = +temp + +toAdd;
+  fullWord += temp;
 
   document.getElementById("text-area").innerHTML = fullWord;
 };
